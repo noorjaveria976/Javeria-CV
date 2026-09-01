@@ -21,6 +21,89 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .phone-with-whatsapp {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        vertical-align: middle;
+      }
+
+      .phone-with-whatsapp .whatsapp-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.15rem;
+        height: 1.15rem;
+        color: var(--accent, #d4a435);
+        transition: transform 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+      }
+
+      .phone-with-whatsapp .whatsapp-link:hover,
+      .phone-with-whatsapp .whatsapp-link:focus-visible {
+        color: var(--accent-strong, #f0c75d);
+        transform: scale(1.08);
+      }
+
+      .site-footer {
+        width: min(100%, 1180px);
+        margin: 0 auto;
+        padding: 1rem 1.25rem 1.5rem;
+        border-top: 1px solid var(--line, rgba(148, 163, 184, 0.3));
+      }
+
+      .site-footer-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        font-size: 0.78rem;
+        color: var(--text-dim, #8a93a5);
+      }
+
+      .site-footer .footer-copy {
+        white-space: nowrap;
+      }
+
+      .site-footer .footer-links {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .site-footer .footer-links a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-dim, #8a93a5);
+        transition: color 0.2s ease, transform 0.2s ease;
+      }
+
+      .site-footer .footer-links a:hover,
+      .site-footer .footer-links a:focus-visible {
+        color: var(--accent, #d4a435);
+        transform: translateY(-1px);
+      }
+
+      .site-footer svg {
+        width: 0.9rem;
+        height: 0.9rem;
+        display: block;
+      }
+
+      @media (max-width: 640px) {
+        .site-footer-inner {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .site-footer .footer-copy {
+          white-space: normal;
+        }
+      }
+    </style>
   </head>
   <body>
     <button
@@ -50,7 +133,21 @@
           <ul class="contact-list">
             <li>
               <span class="label">Phone</span>
-              <a href="tel:+923436258092" aria-label="Call Javeria Noor">+92 3436258092</a>
+              <span class="phone-with-whatsapp">
+                <a href="tel:+923436258092" aria-label="Call Javeria Noor">+92 3436258092</a>
+                <a
+                  class="whatsapp-link"
+                  href="https://wa.me/923436258092"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Chat on WhatsApp"
+                  title="Chat on WhatsApp"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
+                    <path d="M19.11 4.89A9.45 9.45 0 0 0 3.67 15.7L2.5 21l5.42-1.42a9.45 9.45 0 0 0 11.19-13.69ZM12 19.1a7.8 7.8 0 0 1-3.97-1.09l-.29-.17-3.22.85.86-3.14-.19-.32a7.8 7.8 0 1 1 6.81 3.87Zm4.28-5.82c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.42-1.33-1.66-.14-.24-.02-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.29-.74-1.77-.2-.47-.4-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03 0 1.2.87 2.35.99 2.52.12.16 1.7 2.6 4.12 3.64.58.25 1.02.4 1.37.51.58.18 1.1.16 1.52.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.03.14-1.14-.06-.1-.22-.16-.46-.28Z"/>
+                  </svg>
+                </a>
+              </span>
             </li>
             <li>
               <span class="label">Email</span>
@@ -293,7 +390,23 @@
               <div class="contact-card">
                 <h3>Reach out</h3>
                 <ul>
-                  <li><a href="tel:+923436258092">+92 3436258092</a></li>
+                  <li>
+                    <span class="phone-with-whatsapp">
+                      <a href="tel:+923436258092">+92 3436258092</a>
+                      <a
+                        class="whatsapp-link"
+                        href="https://wa.me/923436258092"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Chat on WhatsApp"
+                        title="Chat on WhatsApp"
+                      >
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
+                          <path d="M19.11 4.89A9.45 9.45 0 0 0 3.67 15.7L2.5 21l5.42-1.42a9.45 9.45 0 0 0 11.19-13.69ZM12 19.1a7.8 7.8 0 0 1-3.97-1.09l-.29-.17-3.22.85.86-3.14-.19-.32a7.8 7.8 0 1 1 6.81 3.87Zm4.28-5.82c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.42-1.33-1.66-.14-.24-.02-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.29-.74-1.77-.2-.47-.4-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03 0 1.2.87 2.35.99 2.52.12.16 1.7 2.6 4.12 3.64.58.25 1.02.4 1.37.51.58.18 1.1.16 1.52.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.03.14-1.14-.06-.1-.22-.16-.46-.28Z"/>
+                        </svg>
+                      </a>
+                    </span>
+                  </li>
                   <li><a href="mailto:noorjaveria976@gmail.com">noorjaveria976@gmail.com</a></li>
                   <li><span>Lodhran, Punjab, Pakistan</span></li>
                 </ul>
@@ -324,6 +437,29 @@
         </section>
       </main>
     </div>
+
+    <footer class="site-footer" aria-label="Footer">
+      <div class="site-footer-inner">
+        <div class="footer-copy">© 2026 Javeria Noor. All rights reserved.</div>
+        <div class="footer-links" aria-label="Social links">
+          <a href="https://github.com/noorjaveria976" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.58 2 12.22c0 4.52 2.87 8.35 6.84 9.7.5.09.68-.22.68-.49v-1.77c-2.78.61-3.37-1.34-3.37-1.34-.46-1.19-1.12-1.5-1.12-1.5-.92-.63.07-.62.07-.62 1.02.07 1.56 1.06 1.56 1.06.9 1.57 2.38 1.12 2.96.86.09-.67.35-1.12.64-1.38-2.22-.25-4.56-1.12-4.56-4.96 0-1.1.39-2 .99-2.71-.11-.25-.43-1.29.09-2.68 0 0 .83-.27 2.72 1.02A9.35 9.35 0 0 1 12 6.8c.84 0 1.68.12 2.47.35 1.89-1.29 2.72-1.02 2.72-1.02.52 1.39.2 2.43.1 2.68.62.7.98 1.6.98 2.71 0 3.85-2.34 4.7-4.57 4.95.36.32.69.94.69 1.9v2.82c0 .27.18.59.69.49A10.24 10.24 0 0 0 22 12.22C22 6.58 17.52 2 12 2Z"/>
+            </svg>
+          </a>
+          <a href="mailto:noorjaveria976@gmail.com" aria-label="Email Javeria Noor">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
+              <path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.2-.25 6.8 5.08L18.8 6.5H5.2Zm13.55 2.13-6.11 4.57a1 1 0 0 1-1.28 0L5.25 8.63v8.62c0 .41.34.75.75.75h12c.41 0 .75-.34.75-.75V8.63Z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/923436258092" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
+              <path d="M19.11 4.89A9.45 9.45 0 0 0 3.67 15.7L2.5 21l5.42-1.42a9.45 9.45 0 0 0 11.19-13.69ZM12 19.1a7.8 7.8 0 0 1-3.97-1.09l-.29-.17-3.22.85.86-3.14-.19-.32a7.8 7.8 0 1 1 6.81 3.87Zm4.28-5.82c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.42-1.33-1.66-.14-.24-.02-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.29-.74-1.77-.2-.47-.4-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03 0 1.2.87 2.35.99 2.52.12.16 1.7 2.6 4.12 3.64.58.25 1.02.4 1.37.51.58.18 1.1.16 1.52.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.03.14-1.14-.06-.1-.22-.16-.46-.28Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
