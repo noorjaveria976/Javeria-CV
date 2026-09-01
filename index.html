@@ -25,23 +25,39 @@
       .phone-with-whatsapp {
         display: inline-flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 0.7rem;
         vertical-align: middle;
+        flex-wrap: wrap;
       }
 
       .phone-with-whatsapp .whatsapp-link {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 1.15rem;
-        height: 1.15rem;
-        color: var(--accent, #d4a435);
-        transition: transform 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+        width: 2.35rem;
+        height: 2.35rem;
+        min-width: 2.35rem;
+        padding: 0.38rem;
+        border-radius: 0.9rem;
+        background: rgba(37, 211, 102, 0.12);
+        border: 1px solid rgba(37, 211, 102, 0.45);
+        box-shadow: 0 10px 22px rgba(37, 211, 102, 0.18);
+        color: #25d366;
+        transition: transform 0.2s ease, color 0.2s ease, opacity 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      }
+
+      .phone-with-whatsapp .whatsapp-link svg {
+        width: 100%;
+        height: 100%;
+        display: block;
       }
 
       .phone-with-whatsapp .whatsapp-link:hover,
       .phone-with-whatsapp .whatsapp-link:focus-visible {
-        color: var(--accent-strong, #f0c75d);
+        color: #1fbf5f;
+        background: rgba(37, 211, 102, 0.2);
+        border-color: rgba(37, 211, 102, 0.8);
+        box-shadow: 0 12px 26px rgba(37, 211, 102, 0.28);
         transform: scale(1.08);
       }
 
