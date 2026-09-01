@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Javeria Noor is a Frontend Developer specializing in responsive, user-centric web interfaces, modern UI implementation, and accessible web experiences."
+    />
+    <meta
+      name="keywords"
+      content="Javeria Noor, Frontend Developer, portfolio, CV, web developer, UI developer, responsive design"
+    />
+    <meta name="author" content="Javeria Noor" />
+    <title>Javeria Noor | Frontend Developer</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect width='128' height='128' rx='28' fill='%23f8c44b'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-size='56' fill='%2313151d' font-family='Arial, sans-serif'%3EJ%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button
+      type="button"
+      class="theme-toggle"
+      id="themeToggle"
+      aria-label="Switch to light theme"
+      title="Switch to light theme"
+    >
+      ☀
+    </button>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Profile sidebar">
+        <div class="profile-card">
+          <div class="avatar-wrap" aria-label="Profile photo placeholder">
+            <img class="avatar" src="./img/WhatsApp Image 2026-05-20 at 5.36.01 PM.jpeg" alt="Javeria Noor" />
+          </div>
+          <!-- <div class="profile-heading">
+            <h1>Javeria Noor</h1>
+            <p class="title">Frontend Developer</p>
+          </div> -->
+        </div>
+
+        <section class="sidebar-section" aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Contact me</h2>
+          <ul class="contact-list">
+            <li>
+              <span class="label">Phone</span>
+              <a href="tel:+923436258092" aria-label="Call Javeria Noor">+92 3436258092</a>
+            </li>
+            <li>
+              <span class="label">Email</span>
+              <a href="mailto:noorjaveria976@gmail.com" aria-label="Email Javeria Noor">noorjaveria976@gmail.com</a>
+            </li>
+            <li>
+              <span class="label">Location</span>
+              <span>Lodhran, Punjab, Pakistan</span>
+            </li>
+            <li>
+              <span class="label">GitHub</span>
+              <a href="https://github.com/noorjaveria976" target="_blank" rel="noreferrer" aria-label="Open Javeria Noor GitHub profile">github.com/noorjaveria976</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="sidebar-section" aria-labelledby="skill-heading">
+          <h2 id="skill-heading">Skills</h2>
+          <div class="tag-list">
+            <span>Frontend Development</span>
+            <span>Video Editing</span>
+            <span>Graphic Designing</span>
+            <span>Teamwork</span>
+            <span>Effective Communication</span>
+            <span>Critical Thinking</span>
+          </div>
+        </section>
+
+        <section class="sidebar-section" aria-labelledby="language-heading">
+          <h2 id="language-heading">Languages</h2>
+          <ul class="language-list">
+            <li>
+              <span>Urdu</span>
+              <em>Fluent</em>
+            </li>
+            <li>
+              <span>English</span>
+              <em>Intermediate</em>
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+      <main class="content">
+        <section id="home" class="hero section reveal">
+          <div class="hero-copy">
+            <div class="hero-logo-row" aria-label="Brand logos">
+              <img
+                class="hero-logo hero-logo-left"
+                src="./img/ticer.jpeg"
+                alt="Company logo"
+              />
+              <img
+                class="hero-logo hero-logo-right" style="width: 100px; height: 100px;"
+                src="./img/farmevo.jpeg"
+                alt="Company logo"
+              />
+            </div>
+            <p class="eyebrow">Hello, I am</p>
+            <h2>Javeria Noor</h2>
+            <h3>Frontend Developer</h3>
+            <p class="tagline">
+              I build modern, responsive, and user-focused web experiences that balance aesthetics,
+              usability, and performance.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#contact">Let’s Connect</a>
+              <button type="button" class="secondary-btn" id="printCv">Download CV as PDF</button>
+            </div>
+          </div>
+          <div class="hero-panel" aria-label="Professional highlights">
+            <div class="stat-box">
+              <strong>Responsive</strong>
+              <span>Mobile-first interfaces</span>
+            </div>
+            <div class="stat-box">
+              <strong>UI/UX</strong>
+              <span>Clean and accessible designs</span>
+            </div>
+            <div class="stat-box">
+              <strong>Performance</strong>
+              <span>Fast, smooth experiences</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">About Me</p>
+            <h2>Profile Summary</h2>
+          </div>
+          <div class="about-card">
+            <p>
+              Frontend Developer with expertise in building modern, responsive, and user-centric web
+              interfaces. Experienced in converting UI designs into high-quality code with a strong
+              focus on usability, performance, and accessibility.
+            </p>
+          </div>
+        </section>
+
+        <section id="experience" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Experience</p>
+            <h2>Work Experience</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-icon">●</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Frontend Developer</h3>
+                  <span>2025 - Present</span>
+                </div>
+                <ul>
+                  <li>Built responsive, user-friendly interfaces using HTML, CSS, Bootstrap, and JavaScript.</li>
+                  <li>Converted Figma/UI designs into clean, pixel-perfect layouts.</li>
+                  <li>Ensured cross-browser compatibility and mobile-first responsiveness.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-icon">●</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Frontend Developer Intern</h3>
+                  <span>TEF (Tareen Education Foundation)</span>
+                </div>
+                <p class="meta">May 2025 - Sep 2025</p>
+                <ul>
+                  <li>Redesigned old websites into modern, clean, and professional UI/UX.</li>
+                  <li>Developed responsive landing pages using HTML, CSS, and Bootstrap.</li>
+                  <li>Improved usability, layout, and overall user experience.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="education" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Education</p>
+            <h2>Academic Background</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-icon">●</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>ADP (CS)</h3>
+                  <span>Islamia University Bahawalpur</span>
+                </div>
+                <p class="meta">2023 - 2025</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-icon">●</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Intermediate (FSc, Pre-Medical)</h3>
+                  <span>Pins Public School, Lodhran</span>
+                </div>
+                <p class="meta">2021 - 2023</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-icon">●</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Matric (Science)</h3>
+                  <span>Pins Public School, Lodhran</span>
+                </div>
+                <p class="meta">2019 - 2021</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="skills" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Capabilities</p>
+            <h2>Skills</h2>
+          </div>
+
+          <div class="skill-grid">
+            <div class="skill-card">
+              <div class="skill-topline">
+                <span>HTML &amp; CSS</span>
+                <span>95%</span>
+              </div>
+              <div class="progress"><span style="width: 95%"></span></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-topline">
+                <span>Bootstrap</span>
+                <span>90%</span>
+              </div>
+              <div class="progress"><span style="width: 90%"></span></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-topline">
+                <span>JavaScript</span>
+                <span>85%</span>
+              </div>
+              <div class="progress"><span style="width: 85%"></span></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-topline">
+                <span>Responsive Design</span>
+                <span>92%</span>
+              </div>
+              <div class="progress"><span style="width: 92%"></span></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-topline">
+                <span>UI/UX Translation</span>
+                <span>88%</span>
+              </div>
+              <div class="progress"><span style="width: 88%"></span></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s Work Together</h2>
+          </div>
+
+          <div class="contact-wrap">
+            <div class="contact-info">
+              <div class="contact-card">
+                <h3>Reach out</h3>
+                <ul>
+                  <li><a href="tel:+923436258092">+92 3436258092</a></li>
+                  <li><a href="mailto:noorjaveria976@gmail.com">noorjaveria976@gmail.com</a></li>
+                  <li><span>Lodhran, Punjab, Pakistan</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="field-row">
+                <label>
+                  <span>Name</span>
+                  <input type="text" name="name" placeholder="Your name" aria-label="Your name" required />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="email" placeholder="your@email.com" aria-label="Your email" required />
+                </label>
+              </div>
+
+              <label>
+                <span>Message</span>
+                <textarea name="message" rows="5" placeholder="Tell me about your project" aria-label="Your message" required></textarea>
+              </label>
+
+              <button type="submit" class="primary-btn form-btn">Send Message</button>
+              <p class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
