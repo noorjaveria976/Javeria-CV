@@ -707,6 +707,25 @@ body.light-theme .secondary-btn {
     padding: 30px 20px 8px;
   }
 
+  .phone-with-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .phone-with-whatsapp .whatsapp-link {
+    width: 2.15rem;
+    height: 2.15rem;
+    min-width: 2.15rem;
+  }
+
+  .phone-with-whatsapp a[href^="tel:"] {
+    font-size: 0.98rem;
+    line-height: 1.4;
+  }
+
   .hero-logo-row {
     justify-content: center;
     gap: 12px;
