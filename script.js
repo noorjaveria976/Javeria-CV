@@ -69,10 +69,14 @@ function applyTheme(isLightTheme) {
 function getStoredTheme() {
   try {
     const storedTheme = localStorage.getItem(THEME_KEY);
-    return storedTheme === 'light' ? 'light' : 'dark';
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      return storedTheme;
+    }
   } catch (error) {
-    return 'dark';
+    // Ignore storage errors and fall back to the light default.
   }
+
+  return 'light';
 }
 
 const initialTheme = getStoredTheme();
